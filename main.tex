@@ -189,4 +189,37 @@
 				\vec{x} = x_1\vec{a}_1 + \dots + x_n\vec{a}_n
 			\end{equation*}
 			then the coefficients $x_1,\dots,x_n$ are called the coordinates of the vector $\vec{x}$ with respect to this basis. The vector $(x_1,\dots,x_n)$ is called the coordinate vector of $\vec{x}$ and it itself a vector in $\mathbb{R}^n$ or $\mathbb{C}^n$
+			
+		\subsection{Rank and inverse of a matrix, determinants}
+			\subsubsection{Row and column space}
+			Let $A$ be a matrix with n rows and m columns. Then every row has m entries so that these rows can be seen as vectors in $\mathbb{R}^m$ or $\mathbb{C}^m$; the subspace spanned by the rows is called the row space of the matrix. Similarly, every column is an element of $\mathbb{R}^n$ or $\mathbb{C}^n$; the space spanned by the columns is called the column space of the matrix.
+			
+			\subsubsection{Rank}
+			The rank of a matrix is by definition the dimension of its row or cokumn space. Notation: rank(A).
+			
+			\subsubsection{$2 \times 2$-determinant}
+			The $2\times 2$-determinant of a $2\times2$-matrix
+			\begin{equation*}
+				A = \begin{pmatrix}
+					a & b \\
+					c & d
+				\end{pmatrix}
+			\end{equation*}
+			is the number $ad-bd$. Notation $det(A)$ and
+			\[
+				\left |
+					\begin{matrix}
+						a & b \\
+						c & d
+					\end{matrix}
+				\right |.
+			\]
+			
+			\subsubsection{Determinant function}
+			A determinant function on $\mathbb{R}^n$ or $\mathbb{C}^n$ is a function D that assigns to every $n-tuple$ of vectors $\vec{a}_1,\dots,\vec{a}_n$ a real (or complex) number and hat the properties:
+			\begin{enumerate}
+				\item Multi-linearity: D is linear in every entry
+				\item Antisymmetry by interchanging two vectors the determinant function changes sign.
+				\item Normalization $D(\vec{e}_1,\dot,\vec{e}_n) = 1$.
+			\end{enumerate}
 \end{document}
