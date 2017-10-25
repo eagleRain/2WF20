@@ -128,5 +128,65 @@
 			\subsubsection{Transpose of a matrix}
 			If $A = (a_{ij})$ is a $n \times m$-matrix, then its transpose $A^T$ is the $m \times n$ matrix, whose $i$-th row equals the $i$-th column of A (for $i$ = 1, \dots, m), so the $i,j$-th entry of $A^T$ equals $a_{ji}$. The $j$-th column is then automatically equal to the $j$-th row of A.
 			
+		\subsection{Vector spaces}
+			\subsubsection{The notation of a vector space}
+			For all vectors $\vec{p}, \vec{q}, \vec{r}$ and all scalars(numbers) $\lambda, \mu$ we have.
+			\begin{enumerate}
+				\item $\vec{p} + \vec{q} = \vec{q} + \vec{p}$
+				\item $(\vec{p}+\vec{q}) + \vec{r} = \vec{p} + (\vec{q} + \vec{r})$
+				\item there is a zero vector $\vec{0}$ with the property $\vec{p}+\vec{0} = \vec{p}$ for every $\vec{p}$
+				\item Every vector $\vec{p}$ has an opposite $-\vec{p}$ such that $\vec{p} + -\vec{p} = \vec{0}$ (we also write $\vec{p} - \vec{p}= \vec{0}$)
+				\item $1\vec{p} = \vec{p}$
+				\item $(\lambda\mu)\vec{p} = \lambda(\mu\vec{p})$
+				\item $(\lambda + \mu)\vec{p} = \lambda\vec{p} + \mu\vec{p}$
+				\item $\lambda(\vec{p} + \vec{q} = \lambda\vec{p} + \lambda\vec{q})$
+			\end{enumerate}
+			\subsubsection{Linear subspace}
+			A non-empty subset $W$ of a vector space $V$ is called a linear subspace of $V$ if for all $\vec{p},\vec{q} \in W$ and for all $\lambda$ we have
+			\begin{eqnarray*}
+				\vec{p} + \vec{q} &\in& W\\
+				\lambda\vec{p} &\in& W
+			\end{eqnarray*}
+		
+			Equivalently: for all $\vec{p},\vec{q} \in W$ and for all scalars $\lambda, \mu$
+			\begin{equation*}
+				\lambda\vec{p} + \mu\vec{q} \in W
+			\end{equation*}
 			
+			\subsubsection{Line}
+			Let $\vec{p}$ and $\vec{v}$ be two vectors in a vector space and suppose $\vec{v} \neq \vec{0}$. Then the set of vectors for the form
+			\begin{equation*}
+				\vec{x} = \vec{p} + \lambda\vec{v}, \lambda \in \mathbb{R} \text{ or} \in \mathbb{C}
+			\end{equation*}
+			is called a line in the vector space. The vector $\vec{p}$ is called a position vector of the line and the vector $\vec{v}$ a direction vector. We call the description $\vec{x} = \vec{p} + \lambda\vec{v}$ a parametric equation or parametric representation of the line.
+			
+			\subsubsection{Plane}
+			Let $\vec{p}, \vec{v}, \vec{q}$ be three vectors in a vector space and suppose $\vec{v} \neq \vec{0}, \vec{w} \neq \vec{0},$ and $\vec{v}$ and $\vec{w}$ are not multiples of one another. The set of vectors
+			\begin{equation*}
+				\vec{x} = \vec{p} + \lambda\vec{v}+ \mu\vec{w},\text{ } \lambda, \mu \in \mathbb{R} (\text{or }\mathbb{C})
+			\end{equation*}
+			is called a plane in the vector space with position vector $\vec{p}$ and direction vectors $\vec{v}$ and $\vec{w}$. The description is called a parametric equation of the plane.
+			
+			\subsubsection{Linear combination}
+			Let $\vec{a}_1,\dots,\vec{a}_n$ be vectors in a vector space. The vector $\vec{x}$ is called a linear combination of $\vec{a}_1,\dots,\vec{a}_n$ if there exists scalars $\lambda_1,\dots,\lambda_n$ such that
+			\begin{equation*}
+				\vec{x} = \lambda_1\vec{a}_1 + \dots + \lambda_n\vec{a}_n
+			\end{equation*}
+			In this situation we also say that the vector $\vec{x}$ depends (or is linearly dependent) on the vectors $\vec{a}_1,\dots,\vec{a}_n$
+			
+			\subsubsection{Span of vectors}
+			Let $\vec{a}_1,\dots,\vec{a}_n$ be vectors in a vector space. The set of all linear combinations $\vec{a}_1,\dots,\vec{a}_n$ is called the span of the vectors $\vec{a}_1,\dots,\vec{a}_n$ and is denoted as $<\vec{a}_1,\dots,\vec{a}_n>$.
+			
+			\subsubsection{Linearly in(dependent) set of vectors}
+			A set or system of vectors $\vec{a}_1,\dots,\vec{a}_n$ is called linearly dependent if at east one of the vectors is a linear combination of the others. The vectors are called linearly independent if none of the vectors is a linear combination of the others. We often say in such situations that the vectors $\vec{a}_1,\dots,\vec{a}_n$ are linearly (in)dependent, or that the set $\{\vec{a}_1,\dots,\vec{a_n}\}$ is linearly independent.
+			
+			\subsubsection{Basis and dimension}
+			A linearly independent set spanning a vector space $V$ is called a basis of $V$. The number of elements in the basis is called the dimension of $V$ is denoted as $\dim(V)$
+			
+			\subsubsection{Coordinates}
+			Let $\vec{a}_1,\dots,\vec{a}_n$ be a basis of the vector space $V$. If 
+			\begin{equation*}
+				\vec{x} = x_1\vec{a}_1 + \dots + x_n\vec{a}_n
+			\end{equation*}
+			then the coefficients $x_1,\dots,x_n$ are called the coordinates of the vector $\vec{x}$ with respect to this basis. The vector $(x_1,\dots,x_n)$ is called the coordinate vector of $\vec{x}$ and it itself a vector in $\mathbb{R}^n$ or $\mathbb{C}^n$
 \end{document}
