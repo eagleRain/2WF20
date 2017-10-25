@@ -52,10 +52,10 @@
 			\subsubsection{Complex polynomial}
 			An expression in the form
 			\begin{equation*}
-				a_nz^n + a{n-1}z^{n-1} + ... + a_1z+a_0
+				a_nz^n + a{n-1}z^{n-1} + \dots + a_1z+a_0
 			\end{equation*}
 			
-			in which $a_0,...,a_n$ are complex numbers, is called a complex polynomial. Let $p(z)$ be a polynomial. If $p(\alpha) = 0$, then $\alpha$ is called a zero or root of the polynomial.
+			in which $a_0,\dots,a_n$ are complex numbers, is called a complex polynomial. Let $p(z)$ be a polynomial. If $p(\alpha) = 0$, then $\alpha$ is called a zero or root of the polynomial.
 			
 			\subsubsection{Lines and segments of the (complex) plane}
 			If $z \neq 0$ is a complex number, then the numbers $tz$ with, $t \in \mathbb{R}$, describe the line through $0$ and $z$. The segment with the endpoints $0$ and $z$ is described by taking $t$ in the interval $[0,1]$. We sometimes denote this segment by $[0,z]$. The midpoint of the segment $[0,z]$ is the complex number $\frac{1}{2}z$. For $t = \frac{1}{2}$. we find the midpoint of $[z,w]$:
@@ -72,9 +72,9 @@
 
 		\subsection{Vectors in two and three dimensions}
 			\subsubsection{Linear combinations}
-			If $\vec{v_1},\vec{v_2},,..,\vec{v_k}$ are $k$ vectors and $\lambda_1,...,\lambda_k$ are $k$ real numbers (scalars), then the vector:
+			If $\vec{v_1},\vec{v_2},,..,\vec{v_k}$ are $k$ vectors and $\lambda_1,\dots,\lambda_k$ are $k$ real numbers (scalars), then the vector:
 			\begin{equation*}
-				\lambda_1\vec{v_1} + \lambda_2+\vec{v_2} + ... + \lambda_k+\vec{v_k}
+				\lambda_1\vec{v_1} + \lambda_2+\vec{v_2} + \dots + \lambda_k+\vec{v_k}
 			\end{equation*}
 			is called a linear combination of these vectors.
 			
@@ -97,4 +97,36 @@
 			(v_2w_3 - v_3w_2, v_3w_1 - v_1w_3, v_1w_2 - v_2w_1).
 		\end{equation*}
 		The cross product always gives a vector perpendicular to $\vec{u}$ and $\vec{w}$.
+		
+		\subsection{Matrices and systems of linear equations}
+			\subsubsection{Matrix}
+			A matrix is a rectangular array of numbers or elements from some arithmetical structure.
+			
+			\subsubsection{The opposite matrix}
+			The matrix $B = (-1)A$ satisfies $A+B=0$ and is called the $(additive) opposite of A$. Instead of $(-1)A$ we usually write $-A$.
+			
+			\subsubsection{The identity matrix}
+			The $n\times n$-matrix.
+			\begin{equation*}
+				I = \begin{pmatrix}
+					1 && 0 && \dots && 0 \\
+					0 && 1 && \ddots && \vdots\\
+					\vdots && \ddots && \ddots && 0 \\
+					0 && \dots && 0 && 1
+				\end{pmatrix}
+			\end{equation*}
+			
+			\subsubsection{The (multiplicative) inverse of a matrix}
+			If, given a $n\times n$-matrix A, there exists a matrix $n\times n$ B with $AB = BA = I$ then B is called the inverse of A. We usually denote this inverse by $A^{-1}$. Keep in mind that there also exist non-zero matrices without an inverse.
+			
+			\subsubsection{Inverse of B and A}
+			Let $A$ and $B$ be $n \times n$-matrices and suppose that $A^{-1}$ and $B^{-1}$ exist. Then 
+			\begin{equation*}
+				(AB)^{-1} = B^{-1}A^{-1}
+			\end{equation*}
+			
+			\subsubsection{Transpose of a matrix}
+			If $A = (a_{ij})$ is a $n \times m$-matrix, then its transpose $A^T$ is the $m \times n$ matrix, whose $i$-th row equals the $i$-th column of A (for $i$ = 1, \dots, m), so the $i,j$-th entry of $A^T$ equals $a_{ji}$. The $j$-th column is then automatically equal to the $j$-th row of A.
+			
+			
 \end{document}
