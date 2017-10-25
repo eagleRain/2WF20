@@ -5,6 +5,15 @@
 \usepackage{gensymb}
 
 \begin{document}
+	\title{Linear Algebra Summary}
+	\author{Sven Thiessen}
+	
+	\maketitle
+	\newpage
+	
+	\tableofcontents
+	\newpage
+	
 	\section{Definitions}
 		\subsection{Complex Numbers}
 			\subsubsection{Absolute Value and Argument}
@@ -267,15 +276,13 @@
 		Sets of length 1 vectors which are mutually orthogonal are of special importance. Such sets of vectors are called orthonormal sets. An example is the standard basis $\vec{e}_1,\dots\vec{e}_n$ of $\mathbb{R}^n$ or $\mathbb{C}^n$. Orthonormal sets are useful in computing orthogonal projections, distances, and coordinates.
 		
 		Let V be an inner product space. The vectors $\vec{e}_1,\dots,\vec{e}_n$ in V form an orthonormal set if for $1 \leq i$, $i\leq n$
-		\begin{equation*}
-			\[
-				(\vec{e}_i,\vec{e}_j) = \left \{
+		  \[
+				(\vec{e}_i,\vec{e}_j)=\left\{
 					\begin{array}{ll}
 						0 \text{ if } i \neq j \\
 						1 \text{ if } i = j 
 					\end{array}
-				\right
-			\]
-		\end{equation*}
+				\right.
+		\]
 		If moreover $\vec{e}_1,\dots,\vec{e}_n$ is a basis of V, then the set is called an orthonormal basis of V.
 \end{document}
