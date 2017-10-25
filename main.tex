@@ -2,6 +2,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage[english]{babel}
+\usepackage{gensymb}
 
 \begin{document}
 	\section{Definitions}
@@ -68,4 +69,32 @@
 			
 			\subsubsection{Translations}
 			Let $u$ be a complex number. The map $T: \mathbb{C} \to \mathbb{C}$ given by $T(z) = z+u$ is a translation over $u$. Translations 'preserve shapes', so, for example, they transform straight lines into straight lines.
+
+		\subsection{Vectors in two and three dimensions}
+			\subsubsection{Linear combinations}
+			If $\vec{v_1},\vec{v_2},,..,\vec{v_k}$ are $k$ vectors and $\lambda_1,...,\lambda_k$ are $k$ real numbers (scalars), then the vector:
+			\begin{equation*}
+				\lambda_1\vec{v_1} + \lambda_2+\vec{v_2} + ... + \lambda_k+\vec{v_k}
+			\end{equation*}
+			is called a linear combination of these vectors.
+			
+			\subsubsection{Length}
+			The length of $\vec{x}$ is denoted by $||x||$. The distance between the two vectors $\vec{u}$ and $\vec{v}$ is by defenition the length of the difference $\vec{u}- \vec{v}$ (or $\vec{v} - \vec{u}$), so $||\vec{u} - \vec{v}||$.
+			
+			\subsubsection{The inner product}
+			The inner product of two vectors $\vec{u}$ and $\vec{v}$, both $\vec{0}$, is defined as
+			\begin{equation*}
+				||\vec{u}|| \cdot ||\vec{v}|| \cdot \cos{\rho}.
+			\end{equation*}
+			The inner product is denoted by $(\vec{u}, \vec{v})$.
+			
+		\subsubsection{Orthogonality}
+		If two non-zero vector have inner product 0, then they are perpendicular (the angle between them is $\pm 90\degree$ or $\pm\frac{\pi}{2})$ since the cosine of the angle between them is 0. conversely, if two non-zero vectors are perpendicular then their inner product is 0. Now the zero vector has inner product 0 with any vector, and we agree to say that the zero vector is perpendicular to any vector. This is a convenient convention since then we have: The inner product of two vectors is 0 if and only if the vectors are perpendicular.
+		
+		\subsubsection{Cross product}
+		The cross product of $\vec{v}\times\vec{u}$ of the vectors $\vec{v} = (v_1, v_2, v_3)$ and $\vec{w} = (w_1, w_2, w_3)$ is by definition the vector
+		\begin{equation*}
+			(v_2w_3 - v_3w_2, v_3w_1 - v_1w_3, v_1w_2 - v_2w_1).
+		\end{equation*}
+		The cross product always gives a vector perpendicular to $\vec{u}$ and $\vec{w}$.
 \end{document}
