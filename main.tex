@@ -1,5 +1,71 @@
 \documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[english]{babel}
 
 \begin{document}
-	
+	\section{Definitions}
+		\subsection{Complex Numbers}
+			\subsubsection{Absolute Value and Argument}
+			The absolute value of a complex number is the distance to the origin. The absolute value of a complex number $z=a+bi$ is denoted by $|z|$, and equals $\sqrt{a^2+b^2}$.
+			
+			The argument is the angle the directed segment from the origin to the complex numbers makes with the positive real axis. The argument is only defined for nonzero complex numbers.
+			
+			From the absolute value and argument it is straightforward to find it's real and imaginary parts:
+			\begin{eqnarray*}
+				Re(z) &=& |z|\cos{(\arg{z})} \\
+				Im(z) &=& |z|\sin{(\arg{z})}
+			\end{eqnarray*}
+			\subsubsection{Real part and imaginary part}
+			If $z = a+bi$ with $a,b \in \mathbb{R}$, then $a$ is called the real part of $z$ denoted by $Re(z)$, and b is called the imaginary part of z, denoted by $Im(z)$.
+			
+			For instance for all $z_1,z_2$ we have:
+			\begin{eqnarray*}
+				Re(z_1+z_2) &=& Re(z_1) + Re(z_2) \\
+				Im(z_1+z_2) &=& Im(z_1) + Im(z_1) \\
+				Re(z_1z_2) &=& Re(z_1)Re(z_2) - Im(z_1)Im(z_2) \\
+				Im(z_1z_2) &=& Re(z_1)Im(z_2) + Im(z_1)Re(z_2) \\
+			\end{eqnarray*}
+		
+			\subsubsection{Triangle inequality}
+			\begin{equation*}
+				|z + w| \leq |z| + |w|
+			\end{equation*}
+			
+			\subsubsection{The complex conjugate}
+			If $z = a+bi$ with $a,b \in \mathbb{R}$ is a complex number, then $a-bi$ is called the complex conjugate of $z$, denoted by $\overline{z}$. Geometrically speaking, conjugation is a reflection in the real axis.
+			
+			\subsubsection{Complex exponential function}
+			For very complex number $z$ we define the complex number $e^z$ by giving its absolute value and argument:
+			\begin{eqnarray*}
+				|e^z| &=& e^{Re(z)}, \\
+				\arg{e^z} &=& Im(z)
+			\end{eqnarray*}
+		
+			\subsubsection{Complex sine and cosine}
+			\begin{eqnarray*}
+				\cos{z} &=& \frac{1}{2}(e^{iz} + e^{-iz}), \\
+				\sin{z} &=& \frac{1}{2i}e^{iz} - e^{-iz})
+			\end{eqnarray*}
+		
+			\subsubsection{Complex polynomial}
+			An expression in the form
+			\begin{equation*}
+				a_nz^n + a{n-1}z^{n-1} + ... + a_1z+a_0
+			\end{equation*}
+			
+			in which $a_0,...,a_n$ are complex numbers, is called a complex polynomial. Let $p(z)$ be a polynomial. If $p(\alpha) = 0$, then $\alpha$ is called a zero or root of the polynomial.
+			
+			\subsubsection{Lines and segments of the (complex) plane}
+			If $z \neq 0$ is a complex number, then the numbers $tz$ with, $t \in \mathbb{R}$, describe the line through $0$ and $z$. The segment with the endpoints $0$ and $z$ is described by taking $t$ in the interval $[0,1]$. We sometimes denote this segment by $[0,z]$. The midpoint of the segment $[0,z]$ is the complex number $\frac{1}{2}z$. For $t = \frac{1}{2}$. we find the midpoint of $[z,w]$:
+			\begin{equation*}
+				w + \frac{1}{2}(z-w) \text{or} \frac{1}{2}(z+w)
+			\end{equation*}
+			
+			The length of the segment $[z,w]$ is equal to the distance between $z$ and $w$, i.e., $|w-z|$.
+			
+			The lines through $z_1$ and $z_2$ (with $z_1 \neq z_2$) and through $w_1$ and $w_2$ with ($w_1 \neq w_2)$, respectively, are parallel if and only if $w_2 - w_1$ is a real multiple of $z_2-z_1$, or, equivalently, the quotient $\frac{w_2-w_1}{z_2-z_1} \in \mathbb{R}$
+			
+			\subsubsection{Translations}
+			Let $u$ be a complex number. The map $T: \mathbb{C} \to \mathbb{C}$ given by $T(z) = z+u$ is a translation over $u$. Translations 'preserve shapes', so, for example, they transform straight lines into straight lines.
 \end{document}
