@@ -443,4 +443,77 @@
 			\begin{equation*}
 				w^2 = \frac{b^2-4ac}{4a^2}
 			\end{equation*}
+	\subsection{Vectors in two and three dimensions}
+		\subsubsection{Describing lines in space with coordinates}
+			A parametric equation $\ell: \vec{x} = \vec{a} + \lambda\vec{v}$ with $\vec{a} = (a_1, a_2, a_3)$ and $\vec{v} = (v_1, v_2, v_3)$ is
+			\begin{equation*}
+				\ell: (x_1, x_2, x_3) = (a_1, a_2, a_3) + \lambda(v_1, v_2, v_3)
+			\end{equation*}
+			or in column notation
+			\begin{equation*}
+				\begin{pmatrix}
+					x_1 \\
+					x_2 \\
+					x_3
+				\end{pmatrix} = 
+				\begin{pmatrix}
+					a_1 \\
+					a_2 \\
+					a _3 
+				\end{pmatrix}
+				+ \lambda 
+				\begin{pmatrix}
+					v_1 \\
+					v_2 \\
+					v_3
+				\end{pmatrix}
+			\end{equation*}
+		\subsubsection{Inner product}
+		The inner product f two vectors $\vec{u}$ and $\vec{v}$, both $\neq 0$ is defined as
+		\begin{equation*}
+			||\vec{u}||\cdot||\vec{v}|| \cdot \cos{\rho}
+		\end{equation*}
+		The inner product is denoted by 
+		\begin{equation*}
+			(\vec{u}, \vec{v})
+		\end{equation*}
+		
+		The angle between two vectors can be computed with
+		\begin{equation*}
+			\cos{\rho} = \frac{(\vec{u}, \vec{v})}{||\vec{u}||\cdot||\vec{v}||}
+		\end{equation*}
+	
+		\subsection{Matrices}
+			\subsubsection{Arithmetic rules}
+			\begin{equation*}
+				A(B+C) = AB+AC \text{ and } (E+F)G = EG+FG
+			\end{equation*}
+			\begin{eqnarray*}
+				(\lambda A)B &=& \lambda(AB) \\
+				\lambda(\mu A) &=& (\lambda\mu)A \\
+				(AB)C &=& A(BC).
+			\end{eqnarray*}
+		
+		\subsection{Rank and inverse of a matrix, determinants}
+			\subsubsection{Angle}
+				\begin{equation*}
+					\frac{(\vec{a}, \vec{b})}{||\vec{a}||\cdot||\vec{b}||} = \cos{\rho}
+				\end{equation*}
+			\subsubsection{Orthonormal basis}
+			Let $\vec{a}_1,\dots,\vec{a}_k$ be an orthonormal basis of the linear subspace W of the inner product space V. If $P_w(\vec{a})$ is the orthogonal projection of $\vec{x}$ on W, then:
+			\begin{enumerate}
+				\item $\vec{x} - P_w(\vec{x})$ is perpendicular to every vector from W.
+				\item The orthogonal project $P_w(\vec{x})$ of $\vec{x} \in V$ on $W = <\vec{a}_1,\dots,\vec{a}_k$ equals $P_w(\vec{x}) = (\vec{x},\vec{a}_1)\vec{a}_1 + \dots + (\vec{x},\vec{a}_k)\vec{a}_k$
+				\item $||\vec{x} - P_w(\vec{x})|| = min_{\vec{z} \in W}$ $||\vec{x} - \vec{z}||$, i.e., the orthogonal projection is the unique vector in W with minimal distance to $\vec{x}$.
+				\item $||P_w(\vec{x})|| \leq ||\vec{x}||$ with equality occurring if and only if $\vec{x} = P_w(\vec{x}).$
+			\end{enumerate}
+		
+		\subsubsection{Gram-Schmidt process}
+			\paragraph{Example}
+			We determine an orthonormal basis for the span of the vectors $\vec{a} = (1,1,1,1), \vec{b}=(1,-1,2,0),\vec{c}=(5,0,1,-4)$ in $\mathbb{R}^4$
+			\begin{equation*}
+				\vec{e}_1 = \frac{\vec{a}}{||\vec{a}||} = \frac{1}{2}(1,1,1,1)
+			\end{equation*}
+			
+			Next $P_{<\vec{e}_1>}(\vec{b}) = (\vec{b}, \vec{e}_1)\vec{e}_1 = \frac{1}{2}(1,1,1,1)$, $\vec{b} - P_{<\vec{e}_1>}(\vec{b}) = \frac{1}{2}(1,-3,-3,-1)$.
 \end{document}
